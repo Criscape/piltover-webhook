@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 const Schema = mongoose.Schema;
 
 const studentSchema = new Schema({
-    studentId: Schema.Types.Decimal128,
+    studentId: Schema.Types.Number,
     name: Schema.Types.String,
     age: Schema.Types.Number
 }, {

@@ -1,7 +1,12 @@
 import { Router } from 'express';
 import { WebhookClient } from 'dialogflow-fulfillment';
-import { intentWelcome } from 'src/intents/welcome';
-import { intentUploadAssignment } from 'src/intents/uploadAssignment';
+import { intentEoP } from 'src/intents/eoP';
+import { intentAccionesEstudiante } from 'src/intents/accionesEstudiante';
+import { intentSubirTrabajo } from 'src/intents/subirTrabajo';
+import { intentAccionesProfesor } from 'src/intents/accionesProfesor';
+import { intentCalificarTrabajo } from 'src/intents/calificarTrabajo';
+import { intentCalificarItems } from 'src/intents/calificarItems';
+import { intentRevisarEstado } from 'src/intents/revisarEstado';
 
 
 const router = Router();
@@ -18,8 +23,13 @@ router.post('/', (req, res) => {
 
     const intentMap = new Map();
 
-    intentMap.set('UploadAssignment', intentUploadAssignment);
-    intentMap.set('Welcome', intentWelcome);
+    intentMap.set('EoP', intentEoP);
+    intentMap.set('AccionesEstudiante', intentAccionesEstudiante);
+    intentMap.set('SubirTrabajo', intentSubirTrabajo);
+    intentMap.set('AccionesProfesor', intentAccionesProfesor);
+    intentMap.set('CalificarTrabajo', intentCalificarTrabajo);
+    intentMap.set('CalificarItems', intentCalificarItems);
+    intentMap.set('RevisarEstado', intentRevisarEstado);
 
     agent.handleRequest(intentMap);
 });

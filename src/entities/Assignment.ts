@@ -7,10 +7,6 @@ const assignmentSchema = new Schema({
         type: Schema.Types.ObjectId,
         ref: 'Subject'
     },
-    teacher: {
-        type: Schema.Types.ObjectId,
-        ref: 'Teacher'
-    },
     student: {
         type: Schema.Types.ObjectId,
         ref: 'Student'
@@ -18,7 +14,10 @@ const assignmentSchema = new Schema({
     items: [
         { type: Schema.Types.ObjectId, ref: 'Item' }
     ],
-    title: Schema.Types.String
+    assignmentId: Schema.Types.Number,
+    title: Schema.Types.String,
+    url: Schema.Types.String,
+    grade: Schema.Types.Decimal128
 }, {
     timestamps: true
 });

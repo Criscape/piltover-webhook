@@ -7,9 +7,9 @@ const itemSchema = new Schema({
         type: Schema.Types.ObjectId,
         ref: 'Assignment'
     },
-    description: Schema.Types.String,
-    comment: Schema.Types.String,
-    grade: Schema.Types.Decimal128
+    grade: Schema.Types.Decimal128,
+    percentage: Schema.Types.Decimal128,
+    title: Schema.Types.String
 }, {
     timestamps: true
 });

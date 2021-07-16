@@ -9,6 +9,7 @@ const subjectSchema = new Schema({
     students: [
         { type: Schema.Types.ObjectId, ref: 'Student' }
     ],
+    subjectId: Schema.Types.Number,
     name: Schema.Types.String,
     credits: Schema.Types.Number
 }, {
