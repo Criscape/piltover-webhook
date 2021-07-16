@@ -65,23 +65,11 @@
     /* Advanced Options */
     "skipLibCheck": true,                     /* Skip type checking of declaration files. */
     "forceConsistentCasingInFileNames": true,  /* Disallow inconsistently-cased references to the same file. */
-    "paths": {
-      "@entities/*": [
-        "src/entities/*"
-      ],
-      "@shared/*": [
-        "src/shared/*"
-      ],
-      "@server": [
-        "src/Server"
-      ]
-    },
   },
   "include": [
     "src/**/*.ts"
   ],
   "exclude": [
-    "src/public/",
     "node_modules"
   ]
 }

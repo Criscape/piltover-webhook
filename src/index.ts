@@ -1,7 +1,7 @@
 import './preStart';
-import app from '@server';
-import logger from '@shared/Logger';
 import { connection } from './database';
+import app from './Server';
+import logger from './shared/Logger';
 
 
 const port = Number(process.env.PORT || 3000);
