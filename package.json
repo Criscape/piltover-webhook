@@ -4,11 +4,11 @@
   "author": "Cristian Castro (@Criscape)",
   "description": "Webhook client for serve the dialog architecture for Piltover Chatbot",
   "scripts": {
-    "build": "ts-node build.ts && tsc --build tsconfig.prod.json",
+    "build": "tsc && npm run start",
     "lint": "eslint . --ext .ts",
     "postinstall": "tsc",
     "start2": "node -r module-alias/register ./dist/index.js --env=production",
-    "start": "nodemon",
+    "start": "node dist/index.js --env=production",
     "start:dev": "nodemon",
     "test": "nodemon --config ./spec/nodemon.json",
     "watch-node": "nodemon dist/index.js",
