@@ -1,6 +1,7 @@
 {
   "name": "piltover-webhook",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "Webhook client for serve the dialog architecture for Piltover Chatbot",
   "scripts": {
     "build": "ts-node build.ts && tsc --build tsconfig.prod.json",
     "lint": "eslint . --ext .ts",
@@ -8,6 +9,15 @@
     "start:dev": "nodemon",
     "test": "nodemon --config ./spec/nodemon.json"
   },
+  "engines": {
+    "node": "14.17.1"
+  },
+  "keywords": [
+    "webhook",
+    "chatbot",
+    "piltover"
+  ],
+  "author": "Cristian Castro (@Criscape)",
   "nodemonConfig": {
     "watch": [
       "src"
