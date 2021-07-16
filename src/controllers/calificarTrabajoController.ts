@@ -1,5 +1,5 @@
-import { Assignment } from "@entities/Assignment";
-import { Teacher } from "@entities/Teacher";
+import { Assignment } from "src/entities/Assignment";
+import { Teacher } from "src/entities/Teacher";
 
 export class calificarTrabajoController {
 

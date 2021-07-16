@@ -1,6 +1,6 @@
-import { Assignment } from "@entities/Assignment";
-import { Item } from "@entities/Item";
-import { Subject } from "@entities/Subject";
+import { Assignment } from "src/entities/Assignment";
+import { Item } from "src/entities/Item";
+import { Subject } from "src/entities/Subject";
 
 export class revisarEstadoController {
 

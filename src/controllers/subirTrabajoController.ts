@@ -1,6 +1,6 @@
-import { Assignment } from "@entities/Assignment";
-import { Student } from "@entities/Student";
-import { Subject } from "@entities/Subject";
+import { Assignment } from "src/entities/Assignment";
+import { Student } from "src/entities/Student";
+import { Subject } from "src/entities/Subject";
 
 export class subirTrabajoController {
 

@@ -1,5 +1,6 @@
-import { Assignment } from "@entities/Assignment";
-import { Item } from "@entities/Item";
+import { Assignment } from "src/entities/Assignment";
+import { Item } from "src/entities/Item";
+
 
 export class calificarItemsController {
 
