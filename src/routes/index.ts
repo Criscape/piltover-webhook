@@ -1,12 +1,12 @@
 import { Router } from 'express';
 import { WebhookClient } from 'dialogflow-fulfillment';
-import { intentEoP } from 'src/intents/eoP';
 import { intentAccionesEstudiante } from 'src/intents/accionesEstudiante';
 import { intentSubirTrabajo } from 'src/intents/subirTrabajo';
 import { intentAccionesProfesor } from 'src/intents/accionesProfesor';
 import { intentCalificarTrabajo } from 'src/intents/calificarTrabajo';
 import { intentCalificarItems } from 'src/intents/calificarItems';
 import { intentRevisarEstado } from 'src/intents/revisarEstado';
+import { intentEoP } from 'src/intents/eoP';
 
 
 const router = Router();
