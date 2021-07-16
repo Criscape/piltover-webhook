@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import { WebhookClient } from 'dialogflow-fulfillment';
-import { intentEoP } from './../../src/intents/eoP';
+import { intentEoP } from 'src/intents/eoP';
 import { intentAccionesEstudiante } from 'src/intents/accionesEstudiante';
 import { intentSubirTrabajo } from 'src/intents/subirTrabajo';
 import { intentAccionesProfesor } from 'src/intents/accionesProfesor';
