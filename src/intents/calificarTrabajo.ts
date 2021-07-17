@@ -26,7 +26,6 @@ El sistema se encargará de calcular la nota final.
 Las cosas que puedo hacer por ti son:
 
 🔹Calificar un trabajo por su identificación.
-🔹Mostrar trabajos por materia.
 
 Si has terminado aquí puedes decir "Adiós" 🐤.
             `);

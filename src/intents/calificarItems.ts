@@ -29,7 +29,6 @@ export async function intentCalificarItems(agent: any) {
 Las cosas que puedo hacer por ti son:
 
 🔹Calificar un trabajo por su identificación.
-🔹Mostrar trabajos por materia.
 
 Si has terminado aquí puedes decir "Adiós" 🐤.
         `);
