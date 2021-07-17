@@ -37,12 +37,14 @@ export class calificarItemsController {
     }
 
     async validateItems(itemsString: string, assignmentId: string) {
+        console.log(itemsString)
         const assignment = await this.getAssignmentById(assignmentId).catch(err => console.log(err));
         if (assignment) {
             if (itemsString.includes(',')) {
                 const items = itemsString.split(',');
-                const newItems = []
-                for (let i in items) {
+                let newItems = []
+                for (let i of items) {
+                    console.log(i)
                     if (this.validateItemFormat(i)) {
                         const iSplit = i.split(':');
                         const iSplit2 = iSplit[1].split(';');

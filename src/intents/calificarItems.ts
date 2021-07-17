@@ -7,8 +7,10 @@ export async function intentCalificarItems(agent: any) {
             name: 'accionesprofesor-followup',
             lifespan: 5
         }
+        console.log(agent.parameters)
         const calificarTrabajoContext = agent.contexts.filter((context: { name: string; }) => context.name == 'calificartrabajo-followup');
         const items = await controller.validateItems(agent.parameters["grade"], calificarTrabajoContext[0].parameters.assignmentId).catch(err => console.log(err));
+        console.log(items)
         if (items) {
             let itemsCreated = []
             for (let item of items) {
@@ -18,7 +20,7 @@ export async function intentCalificarItems(agent: any) {
             const itemsId = itemsCreated.map(item => item.id);
             await controller.updateAssignmentGradeAndItems(calificarTrabajoContext[0].parameters.assignmentId, assignmentGrade, itemsId).catch(err => console.log(err));
             agent.add(`
-✅ Se ha calificado con éxito la tarea. Te regresaré al menú de selección de acciones.
+✅ Se ha calificado con éxito la tarea, la nota final fue de ${assignmentGrade}. Te regresaré al menú de selección de acciones.
             `);
         } else {
             agent.add(`
