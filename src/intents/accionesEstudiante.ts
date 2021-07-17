@@ -1,10 +1,10 @@
 export async function intentAccionesEstudiante(agent: any) {
+    const eoPContext = agent.contexts.filter((context: { name: string; }) => context.name == 'eop-followup');
     agent.add(`
-Entendido, las cosas que puedo hacer por ti son:
+Entendido ${eoPContext[0].parameters.person}, las cosas que puedo hacer por ti son:
 
 🔹Entregar tu trabajo a través de un enlace.
 🔹Revisar el estado de un trabajo por su identificación.
-🔹Listar tus trabajos por materia.
 
 Si has terminado aquí puedes decir "Adiós" 🐤.
     `);
