@@ -4,7 +4,7 @@
   "author": "Cristian Castro (@Criscape)",
   "description": "Webhook client for serve the dialog architecture for Piltover Chatbot",
   "scripts": {
-    "build": "ts-node build.ts && tsc && npm run start",
+    "build": "ts-node build.ts && tsc",
     "lint": "eslint . --ext .ts",
     "postinstall": "tsc",
     "start": "node dist/index.js --env=production",
