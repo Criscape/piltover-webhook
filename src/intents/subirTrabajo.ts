@@ -1,4 +1,4 @@
-import { subirTrabajoController } from "src/controllers/subirTrabajoController";
+import { subirTrabajoController } from "../controllers/subirTrabajoController";
 
 export async function intentSubirTrabajo(agent: any) {
     const accionesEstudianteContext = {

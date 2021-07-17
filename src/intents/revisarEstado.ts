@@ -1,4 +1,4 @@
-import { revisarEstadoController } from "src/controllers/revisarEstadoController";
+import { revisarEstadoController } from "../controllers/revisarEstadoController";
 
 export async function intentRevisarEstado(agent: any) {
     const controller = new revisarEstadoController();

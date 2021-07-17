@@ -1,4 +1,4 @@
-import { eoPController } from "src/controllers/eoPController";
+import { eoPController } from "../controllers/eoPController";
 
 export async function intentEoP(agent: any) {
     const controller = new eoPController();

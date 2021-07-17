@@ -4,11 +4,12 @@
   "author": "Cristian Castro (@Criscape)",
   "description": "Webhook client for serve the dialog architecture for Piltover Chatbot",
   "scripts": {
-    "build": "tsc && npm run start",
+    "build": "ts-node build.ts && tsc && npm run start",
     "lint": "eslint . --ext .ts",
     "postinstall": "tsc",
     "start": "node dist/index.js --env=production",
     "start:dev": "nodemon",
+    "start:local": "npm run build && node dist/index.js --env=production",
     "watch-node": "nodemon dist/index.js",
     "watch-ts": "tsc -w",
     "deploy": "git add . && git commit -m Heroku && git push heroku main"
@@ -30,10 +31,6 @@
       "src/public"
     ],
     "exec": "ts-node -r tsconfig-paths/register ./src"
-  },
-  "_moduleAliases": {
-    "@shared": "dist/shared",
-    "@server": "dist/Server"
   },
   "eslintConfig": {
     "parser": "@typescript-eslint/parser",

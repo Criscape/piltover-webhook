@@ -1,4 +1,4 @@
-import { calificarItemsController } from "src/controllers/calificarItemsController";
+import { calificarItemsController } from "../controllers/calificarItemsController";
 
 export async function intentCalificarItems(agent: any) {
     const controller = new calificarItemsController();

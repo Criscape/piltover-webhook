@@ -1,4 +1,4 @@
-import { calificarTrabajoController } from "src/controllers/calificarTrabajoController";
+import { calificarTrabajoController } from "../controllers/calificarTrabajoController";
 
 export async function intentCalificarTrabajo(agent: any) {
     if (agent.parameters && agent.parameters["assignmentId"]) {

@@ -1,5 +1,5 @@
-import { Student } from "src/entities/Student";
-import { Teacher } from "src/entities/Teacher";
+import { Student } from "../entities/Student";
+import { Teacher } from "../entities/Teacher";
 
 export class eoPController {
 
